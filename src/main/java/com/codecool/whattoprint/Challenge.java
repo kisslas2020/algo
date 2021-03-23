@@ -2,6 +2,9 @@ package com.codecool.whattoprint;
 
 class Challenge {
     public static String decideAndSay(String[] words, int number) {
+        if(words == null || words.length == 0) {
+            return "";
+        }
         if (number % 3 == 0 && number % 7 == 0) {
             return words[0] + words[1];
         } else if (number % 3 == 0) {
